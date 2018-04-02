@@ -1,0 +1,346 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60.25%;
+   
+    /*A fonte ficará 10px por padrão.
+    Então caso queira colocar 18px, será 1.8em, para
+    ficar responsivo as fontes, não use px*/
+}
+@font-face{
+    font-family: caviar;
+    scr: url('../fonts/caviardreams-webfont.woff');
+    font-family: bebas;
+    scr: url('../fonts/bebasneue-regular-webfont.woff');
+    font-family: zebrazil;
+    scr: url('..fonts/zebrazil.woff');
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*MAIN HEADER*/
+.main_header {
+    /*caso o browser não reconheça vh*/
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url(../img/bg1.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main_header nav {
+    padding: 20px 0;
+    text-align: right;
+    z-index: 1;
+}
+
+.main_header li {display: inline-block;}
+.main_header li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #FFF;
+    font-size: 1.4em;
+    font-weight: 777;
+    text-transform: uppercase;
+}
+.main_header li a:last-of-type {padding-rightss: 0;}
+
+.intro-info {
+  padding: 150px 0;
+  text-align: center;
+}
+
+@media (max-width: 760px){
+    .intro-info {
+      padding: 100px 0;
+    }
+}
+
+.intro-info h1 {
+    margin-bottom: 20px;
+    font-size: 3.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: #FFF;
+    animation: moveRight .3s;
+}
+
+@keyframes moveRight{
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+.intro-info blockquote {
+    color: #FFF;
+    max-width: 300px;
+    font-size: 1.8em;
+    animation: moveUp .3s;
+    margin: auto;
+    font-style: italic;
+}
+
+.intro-info blockquote:after, .intro-info blockquote:before {
+    content: '';
+    display: block;
+    margin: 20px auto;
+    height: 3px;
+    width: 60px;
+    background: #FFF;
+}
+
+@keyframes moveUp{
+
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+.wrap{
+    width: 1000px;
+    margin:auto;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.4s;
+    width: 200px;
+    height: 200px;
+    background: #f0f8ff;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'roboto';
+    float: left;
+    margin: 20px;
+    color:#4f4f4f;
+   
+    border-radius: 3px;
+}
+h4{
+    text-align: justify;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'Nanum Gothic';
+    letter-spacing: 2px;
+    font-weight: normal;
+
+}
+
+
+.skewnegative{
+     background:linear-gradient(rgba(0, 0, 106, 0.9),rgba(0,0,0,0.5)),url(../img/bg2.jpg);
+     width: 100%;
+     height:500px;
+     position: relative;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+.card3{
+    margin-top: 100px;
+}
+.card3 p{
+    font-size: 20px;
+    width: 300px;
+    color: #fff;
+}
+
+.card3 img{
+    padding-left: 70px;
+}
+
+.text2{
+    font-size: 41px;
+    font-family: 'bebas';
+    font-weight: bold;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+    letter-spacing: 5px;
+    margin-top: 5px;
+    position: relative;
+    top: 75px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.skewnegative{
+    display: flex;
+
+}
+
+.wrap2{
+    padding-left: 23%;
+    margin-top: 100px;
+}
+
+.wrap2 img{
+    width: 150px;
+    height: 150px;
+}
+.paragrafo5{
+    width: 280px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -67px;
+}
+.skewnegative .img1{
+    padding-top: 95px;
+    
+    
+    width: 100px;
+    height:100px;
+
+}
+
+.skewnegative .img2{
+    padding-top: 100px;
+    
+    
+    width: 100px;
+    height:100px;
+
+}
+
+.paragrafo1{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.conteudo h5{
+    font-size: 40px;
+    font-family: 'Fjalla One';
+    color:#000;
+    text-align: center;
+    margin-top: 40px;
+    transition: 3s;
+}
+
+.paragrafo3{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 8px;
+    color: #ccc;
+    font-style: italic;
+}
+.paragrafo4{
+    text-align: center;
+    font-size: 10px;
+    margin-top: -11px;
+    color: #ccc;
+    font-family: 'bebas'
+}
+
+.space{
+    background-color: #F0F8FF;
+    margin-top: -89px;
+    width: 100%;
+    height:350px;
+    display: flex;
+
+
+}
+
+.contenido{
+    width: 200px;
+    left: 500px;
+    margin-left: 145px;
+    margin-top: 138px;
+}
+
+.contenido img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+
+.card4{
+     display: flex;
+    
+}
+.circle {
+  background-color: #f0f8ff;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  top: 150px;
+  margin-left:80px;
+ 
+}
+
+.circle img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.texto2{
+    text-align: center;
+    font-size: 17px;
+    color: #808080;
+    font-family: 'Nanum Gothic';
+   float: right;
+   width: 500px;
+   margin-right: 150px;
+   margin-top: 190px;
+   text-align: justify;
+   line-height: 25px;
+}
+
+footer{
+    width: 100%;
+    height:600px;
+    background-color: #696969;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
